@@ -1,0 +1,161 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #86baa1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a:hover {
+  background-color: #d8e2dc;
+}
+
+.navbar a {
+  float: right;
+  color: black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px 30px;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+.mybutton {
+  background-color: #d8e2dc;
+  border: none;
+  text-decoration: none;
+  color: black;
+  padding: 15px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18 px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.homeDesc {
+  font-size: 28px;
+  text-align: left;
+  font-family: 'Cabin', monospace;
+  margin-top: 80px;
+}
+.contact {
+  font-size: 28px;
+  text-align: left;
+  font-family: 'Cabin', monospace;
+  margin-top: 80px;
+}
+.contactdiv {
+  background-color: #f2f2f2;
+}
+
+.missionstatement {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Cabin', monospace;
+}
+
+.footer {
+  min-height: 100%;
+  margin-bottom: -100px;
+  background: #9fb8ad;
+  text-align: center;
+  height: 95px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.animatedtext {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+p {
+  color: black;
+  font-display: bold;
+  margin: 0 auto;
+  font-size: 35px;
+  border-right: solid 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Cabin', monospace;
+  background: lightgray;
+}
+.myclass {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  animation: animated-text 4s steps(25,end) 1s 1 normal
+  both, animated-cursor 
+  750ms steps(25,end) infinite;
+  
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 600px;
+  }
+}
+@keyframes animted-cursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  margin-left: 48px;
+}
+
+.question {
+  display: flex;
+  margin-top: 2em;
+}
+
+.answer-choice img {
+  height: 10em;
+}
+.question {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.answer-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actual_question span{
+  background-color: #f5ebe0
+}
+
+.logo{
+  align-items: center;
+}
+
+
+
+
